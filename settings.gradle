@@ -1,3 +1,4 @@
 rootProject.name='dsalgo'
 include ':app'
 include ':dsalgolib'
+include ':javaconcepts'

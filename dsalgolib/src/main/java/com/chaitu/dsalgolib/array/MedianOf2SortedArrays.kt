@@ -23,12 +23,12 @@ object MedianOf2SortedArrays {
         val arr1 = intArrayOf(2, 19, 42, 47, 55)
         val arr2 = intArrayOf(1, 6, 8, 10, 50, 60)
 
-        println("Median of 2 sorted arrays is : ${getMedium(arr1, arr2)}")
+        println("Median of 2 sorted arrays is : ${getMedian(arr1, arr2)}")
     }
 
-    private fun getMedium(arr1: IntArray, arr2: IntArray): Double {
+    private fun getMedian(arr1: IntArray, arr2: IntArray): Double {
         if (arr1.size > arr2.size) {
-            return getMedium(arr2, arr1)
+            return getMedian(arr2, arr1)
         }
 
         var low = 0

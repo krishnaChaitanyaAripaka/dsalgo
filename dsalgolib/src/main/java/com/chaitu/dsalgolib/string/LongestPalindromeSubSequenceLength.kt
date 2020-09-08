@@ -2,7 +2,7 @@ package com.chaitu.dsalgolib.string
 
 import com.chaitu.dsalgolib.utils.print
 
-object LongestPalindromeSubSequence {
+object LongestPalindromeSubSequenceLength {
     @JvmStatic
     fun main(args: Array<String>) {
 //        val str = "ABBDCACB"
@@ -11,8 +11,11 @@ object LongestPalindromeSubSequence {
 //        val str = "BBABACBCAA"
         //EXPECTED O/P : 7
 
-        val str = "BBAB"
+//        val str = "BBAB"
         //EXPECTED O/P : 3
+
+        val str = "AGBDBA"
+        //EXPECTED O/P : 5
 
         longestPalindromeSubsequence(str)
     }

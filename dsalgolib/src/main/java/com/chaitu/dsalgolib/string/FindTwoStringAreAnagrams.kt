@@ -21,17 +21,17 @@ object FindTwoStringAreAnagrams {
         }
 
         val count = 256
-        val charArray1 = IntArray(count)
-        Arrays.fill(charArray1, 0)
-        val charArray2 = IntArray(count)
-        Arrays.fill(charArray2, 0)
+        val intArray1 = IntArray(count)
+        Arrays.fill(intArray1, 0)
+        val intArray2 = IntArray(count)
+        Arrays.fill(intArray2, 0)
         for (i in s1.indices) {
-            charArray1[s1[i].toInt()]++
-            charArray2[s2[i].toInt()]++
+            intArray1[s1[i].toInt()]++
+            intArray2[s2[i].toInt()]++
         }
 
         for (i in 0 until count) {
-            if (charArray1[i] != charArray2[i]) {
+            if (intArray1[i] != intArray2[i]) {
                 return false
             }
         }

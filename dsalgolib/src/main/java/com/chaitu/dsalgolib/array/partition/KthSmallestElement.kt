@@ -1,4 +1,4 @@
-package com.chaitu.dsalgolib.partition
+package com.chaitu.dsalgolib.array.partition
 
 object KthSmallestElement {
     @JvmStatic
